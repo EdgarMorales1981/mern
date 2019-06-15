@@ -6,7 +6,10 @@ const mongoose = require('mongoose');
 
 //connecting in db
 
-mongoose.connect('mongodb://localhost/crud-mongo')
+//mongoose.connect('mongodb://localhost/crud-mongo')
+mongoose.connect('mongodb+srv://edgar:<holaed>@cluster0-zeaxr.mongodb.net/test?retryWrites=true&w=majority')
+
+
 
 .then(db => console.log('db conectada'))
 .catch(err => console.log(err));

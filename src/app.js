@@ -7,7 +7,9 @@ const mongoose = require('mongoose');
 //connecting in db
 
 //mongoose.connect('mongodb://localhost/crud-mongo')
-mongoose.connect('mongodb+srv://edgar:<holaed>@cluster0-zeaxr.mongodb.net/test?retryWrites=true&w=majority')
+mongoose.connect('mongodb+srv://edgar:edgar123@cluster0-zeaxr.mongodb.net/test?retryWrites=true&w=majority',  {
+  useNewUrlParser: true
+})
 
 
 
